@@ -48,7 +48,6 @@ int getIntInput(const string& prompt, int minValue, int maxValue) {
 struct IndexedList {
     vector<int> data;
 
-    // Отримання значення за індексом
     int get(int index) {
         if (index >= 0 && index < static_cast<int>(data.size())) {
             return data[index];
@@ -59,7 +58,7 @@ struct IndexedList {
         }
     }
 
-    // Встановлення значення за індексом
+
     void set(int index, int value) {
         if (index >= 0 && index < static_cast<int>(data.size())) {
             data[index] = value;
@@ -70,7 +69,7 @@ struct IndexedList {
         }
     }
 
-    // Вставка елементу за індексом
+    
     void insert(int index, int value) {
         if (index >= 0 && index <= static_cast<int>(data.size())) {
             data.insert(data.begin() + index, value);
@@ -81,7 +80,7 @@ struct IndexedList {
         }
     }
 
-    // Вилучення елементу за індексом
+    
     void remove(int index) {
         if (index >= 0 && index < static_cast<int>(data.size())) {
             data.erase(data.begin() + index);
