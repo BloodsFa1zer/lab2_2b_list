@@ -48,11 +48,6 @@ int getIntInput(const string& prompt, int minValue, int maxValue) {
 struct IndexedList {
     vector<int> data;
 
-    // Додавання елементу в кінець списку
-    void append(int value) {
-        data.push_back(value);
-    }
-
     // Отримання значення за індексом
     int get(int index) {
         if (index >= 0 && index < static_cast<int>(data.size())) {
