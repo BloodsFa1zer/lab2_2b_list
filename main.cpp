@@ -223,7 +223,7 @@ void demonstrationMode() {
     for (int i = -1; i >= -5; i--) {
         randValue = rand() % 5000;
         list.insert(i, randValue);
-        cout << "Element: " << randValue << " added at the beginning with index: " << i << endl;
+        cout << "Element: " << randValue << " added at the end with index: " << i << endl;
     }
     list.print();
     cout << "\n**** Data successfully added at the end! ****\n";
