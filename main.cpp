@@ -284,7 +284,7 @@ void benchmarkMode() {
     auto endTimeInsertingElemAtBeginning = high_resolution_clock::now();
 
     auto startTimeInsertingElemAtEnd = high_resolution_clock::now();
-    for (int i = -1; i >= 5; i--) {
+    for (int i = -1; i >= -5; i--) {
         randValue = rand() % 5000;
         list.insert(i, randValue);
     }
